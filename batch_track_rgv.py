@@ -1,7 +1,7 @@
 import os
 
 # Pasta a ser pesquisada
-diretorio_raiz = r"Y:\AUTO HONDA\RGV\2016\11_NOVEMBRO"
+diretorio_raiz = r"Y:\AUTO HONDA\RGV\2016\12_DEZEMBRO"
 letra_lote = "F"
 nome_tabela = "DATAV16"
 caminho_banco = r'''C:\Users\Latitude\Desktop\PYTHON SCRIPTS\BASE_FORM_V15.mdb'''
