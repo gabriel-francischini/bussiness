@@ -4,7 +4,7 @@ import os
 diretorio_raiz = r"Y:\AUTO HONDA\RGV\2016\12_DEZEMBRO"
 letra_lote = "F"
 nome_tabela = "DATAV16"
-caminho_banco = r'''C:\Users\Latitude\Desktop\PYTHON SCRIPTS\BASE_FORM_V15.mdb'''
+caminho_banco = r'''Z:\HONDA RGV\BASE_FORM_V15.mdb'''
 nome_do_arquivo_temporario = "arquivo_td_temp.txt"
 
 import pyodbc
@@ -49,7 +49,7 @@ arquivo_temp.close()
 
 print("Conferindo BatchPgDta's...")
 
-cursor.execute("select * from "+ nome_tabela + "")
+cursor.execute("select * from "+ nome_tabela + " where remote_bid like '0' ")
 entrada = cursor.fetchone()
 
 while  entrada:
